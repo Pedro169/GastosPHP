@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>SOLEMNE2_GASTOS-Unab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/funciones.js"></script>
+        <script src="js/jquery.js"></script>
+    </head>
+    
+    <body>
+        <div><h1>GASTOS MENSUALES</h1></div>
+        <div><h3>Este programa le permite calcular sus gastos.</h3></div>
+              
+        <br><br> INGRESE SU REMUNERACIÓN: <input type="text" name="base" id="base" size="12" value="" onkeypress="return soloNumeros(event)">
+        <br><br>
+        
+        Gastos del Mes: 
+        <br>
+        <br>Gasto GAS<br><input type="text" name="n1" id="n1" size="12" value="" onkeypress="return soloNumeros(event)">
+         <br>
+        <br>Gasto AGUA<br><input type="text" name="n2" id="n2" size="12" value="" onkeypress="return soloNumeros(event)">
+         <br>
+        <br>Gasto LUZ<br><input type="text" name="n3" id="n3" size="12" value="" onkeypress="return soloNumeros(event)">
+         <br>
+        <br>Gasto INTERNET<br><input type="text" name="n4" id="n4" size="12" value="" onkeypress="return soloNumeros(event)">
+         <br>
+        <br>Gasto TV<br><input type="text" name="n5" id="n5" size="12" value="" onkeypress="return soloNumeros(event)">
+         <br>
+        <br>Gasto TELEFONO<br><input type="text" name="n6" id="n6" size="12" value="" onkeypress="return soloNumeros(event)">
+         <br>
+        <br>Gasto DIVIDENDO<br><input type="text" name="n7" id="n7" size="12" value="" onkeypress="return soloNumeros(event)">
+         <br>
+        <br>Gasto PRESTAMO BANCARIO<br><input type="text" name="n8" id="n8" size="12" value="" onkeypress="return soloNumeros(event)">
+         <br>
+        <br>Gasto TAG<br><input type="text" name="n9" id="n9" size="12" value="" onkeypress="return soloNumeros(event)">
+         <br>
+        <br>Gasto SEGURO AUTOMOTRIZ<br><input type="text" name="n10" id="n10" size="12" value="" onkeypress="return soloNumeros(event)">
+         <br>
+        <br>Gasto UNIVERSIDAD<br><input type="text" name="n11" id="n11" size="12" value="" onkeypress="return soloNumeros(event)">
+         <br>
+        
+        <br><input type="button" value="Operatoria" onclick='operacion();'>
+         <div id="divResultado" style="display:none">
+            <label id="labelResultado"></label>
+            <br>
+            <input type="button" value="Reiniciar" onclick='reiniciar();'>
+        </div>
+                   
+    </body>
+</html>
